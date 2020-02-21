@@ -1,6 +1,244 @@
-h1 { opacity: 0; } header img { width: 15%; height: auto; margin-bottom: 30px; }
-header { text-align: center; background-image: url("../img/hotel10.png");
-background-position: 0 -465px; } footer .card-header { background-color: rgb(50,
-50, 50); color: rgb(255, 255, 255); text-align: center; font-size: 15pt; }
-footer .card-body { background-color: rgb(100, 100, 100); color: white;
-text-align: center; }
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hotel Serra Nevada</title>
+    <!-- CSS de origem bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/hotel.css" />
+
+    <!-- Este CSS é exibido, ou seja, executado somente
+    nesta página, pois ele foi embutido(embed) -->
+    <style>
+      body {
+        background-image: url("img/momentos2.jpg");
+        background-size: 100%;
+        /* Fazer com que a iamgem não repita no
+        plano de fundo, ou seja, será ixibida
+        apenas uma */
+        background-repeat: no-repeat;
+
+        /* Vamos fixar a imagem ao plano de fundo para que ela não
+        role junto ao texto. Essa ficará "travada" */
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <!--##################### Início da barra de navegação ################### -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Hotel Serra Nevada</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Acomodação
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="suitestandard.html"
+                >Suite Standard</a
+              >
+              <a class="dropdown-item" href="suitedouble.html">Suite Double</a>
+              <a class="dropdown-item" href="suitemaster.html">Suite Master</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lazer.html">Lazer</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gastronomia.html">Gastronomia</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventos.html">Eventos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reservas.html">Reservas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="localizacao.html">Localização</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ####################### Fim da barra de navegação ######################### -->
+
+    <header>
+      <h1>Hotel Serra Nevada</h1>
+      <img src="img/logo1.png" alt="Hotel Serra Nevada" />
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div id="home1">
+          <h2>Sejam Bem Vindo ao Hotel Serra Nevada</h2>
+          <p>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              tempora sit voluptas, repellat pariatur omnis amet quas
+              repudiandae non quisquam corrupti laborum quasi facere placeat
+              aperiam doloribus! Minus, praesentium veritatis!</span
+            >
+            <span
+              >Voluptate esse, eveniet velit quibusdam aperiam id sapiente et
+              magnam vitae recusandae rerum aliquam a exercitationem! Aut
+              quibusdam adipisci voluptatibus maiores officia officiis numquam
+              ullam, molestias rerum quod ipsam eaque.</span
+            >
+            <span
+              >Laudantium sunt odio libero error ducimus quae corporis nisi
+              quasi a explicabo quaerat assumenda officiis commodi porro dolorum
+              non distinctio enim, culpa magni. Praesentium, odit alias! Eaque
+              quia tempore molestiae.</span
+            >
+            <span
+              >Est cupiditate sequi, quas culpa ipsum, consectetur quod nemo
+              corrupti quaerat dolore voluptatem corporis ut quae omnis libero
+              obcaecati temporibus iusto facilis eius repellat quasi. Optio
+              corporis natus quae odio.</span
+            >
+          </p>
+          <p>
+            <span
+              >Excepturi, minus architecto maxime perferendis consequatur
+              suscipit expedita porro eum, enim voluptates accusamus accusantium
+              eius, blanditiis hic pariatur mollitia. Incidunt, qui error! Quo
+              inventore blanditiis commodi consequuntur fuga ullam iste!</span
+            >
+            <span
+              >Repellendus placeat numquam commodi, nam repellat perspiciatis
+              culpa iure eligendi est modi expedita velit ipsam molestiae
+              assumenda quaerat laboriosam reiciendis nesciunt nihil ad iste
+              nulla qui cumque omnis odio? Iusto?</span
+            >
+            <span
+              >Saepe harum pariatur iusto commodi cumque nulla, est veritatis
+              quisquam optio nam quia laudantium autem rerum consectetur
+              obcaecati placeat possimus quidem dolor eligendi. Facere
+              repudiandae quos amet rem aliquid. Harum.</span
+            >
+            <span
+              >Ipsa at velit facilis aperiam nostrum placeat provident sequi! Ex
+              illum, in natus, consectetur vitae sed qui nobis tenetur aperiam
+              nulla laudantium veritatis saepe dolores molestiae officia
+              officiis itaque explicabo!</span
+            >
+          </p>
+        </div>
+
+        <div id="home2">
+          <h3>Nosso espaço</h3>
+          <p>
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+              distinctio, corrupti provident consectetur animi temporibus. Iure,
+              eaque tempore repudiandae exercitationem accusantium dolorem
+              quaerat nesciunt corporis, doloribus vitae, nihil ex
+              incidunt.</span
+            >
+            <span
+              >Odio sapiente magni, nulla, nobis ducimus consequuntur numquam
+              aspernatur dolorum minus officia voluptate iste molestias a sequi
+              dolores natus? Laborum veritatis ratione veniam repellendus
+              sapiente vitae distinctio molestias facilis amet.</span
+            >
+            <span
+              >Unde suscipit laboriosam nobis amet aliquam, cum, recusandae
+              cupiditate, iure doloremque architecto praesentium aperiam
+              inventore officia sapiente. Dignissimos saepe eos totam
+              laudantium, commodi minus possimus cupiditate amet ab laboriosam
+              explicabo?</span
+            >
+            <span
+              >A, quaerat dolorem. Accusantium, alias. Animi, quae accusamus
+              quia recusandae possimus veritatis atque molestiae culpa aliquam
+              libero doloribus repudiandae excepturi praesentium voluptatem est
+              dolores eaque consequuntur quas aut tempora hic!</span
+            >
+          </p>
+          <div id="imgHome">
+            <img src="img/lounge9.jpg" alt="Espaço Das Piscinas" />
+            <img src="img/eventos3.jpg" alt="Salão de Festa" />
+            <img src="img/gastronomia18.jpg" alt="Espaço Gastronomico" />
+            <img src="img/restaurante4.jpg" alt="Restaurante" />
+            <img src="img/lazer9.jpg" alt="Área de Lazer" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- ################### Início do footer #####################-->
+      <div class="card">
+        <div class="card-header">
+          Contato
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Endereço:<br />
+            Av. Osvaldo Aranha, 610 - Vila Luiza, Canela - RS
+          </h5>
+          <p class="card-text">
+            Telefone: (54) 3278-9700 | (54) 3265-8095
+            <a href="mailto:hotelserranevada@hotmail.com.br"
+              >contato@hotelserranevada.com.br</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- ################### Fim do footer #################### -->
+    </footer>
+
+    <!-- Scripts de origem bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

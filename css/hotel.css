@@ -10,7 +10,6 @@ header {
   text-align: center;
   background-image: url("../img/hotel10.png");
   background-position: 0 -465px;
-  
 }
 footer .card-header {
   background-color: rgb(50, 50, 50);
@@ -21,5 +20,57 @@ footer .card-header {
 footer .card-body {
   background-color: rgb(100, 100, 100);
   color: white;
+  text-align: center;
+}
+#home1 {
+  background-color: rgba(255, 255, 255, 0.384);
+  padding: 40px;
+  margin-bottom: 200px;
+  text-align: justify;
+}
+#home2 {
+  background-color: rgba(255, 255, 255, 0.384);
+  padding: 40px;
+  text-align: justify;
+}
+#imgHome {
+  text-align: center;
+}
+#imgHome img {
+  width: 400px;
+  height: 350px;
+  margin: 10px 10px;
+  transition: ease 5s;
+  opacity: 70%;
+}
+#imgHome img:hover {
+  opacity: 100%;
+  cursor: wait;
+}
+#imgLazer img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  cursor: pointer;
+}
+#imgLazer {
+  text-align: center;
+}
+#imgGastronomia img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  cursor: pointer;
+}
+#imgGastronomia {
+  text-align: center;
+}
+#imgEventos img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  cursor: pointer;
+}
+#imgEventos {
   text-align: center;
 }

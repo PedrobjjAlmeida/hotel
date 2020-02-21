@@ -1,6 +1,250 @@
-h1 { opacity: 0; } header img { width: 15%; height: auto; margin-bottom: 30px; }
-header { text-align: center; background-image: url("../img/hotel10.png");
-background-position: 0 -465px; } footer .card-header { background-color: rgb(50,
-50, 50); color: rgb(255, 255, 255); text-align: center; font-size: 15pt; }
-footer .card-body { background-color: rgb(100, 100, 100); color: white;
-text-align: center; }
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hotel Serra Nevada</title>
+    <!-- CSS de origem bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/hotel.css" />
+  </head>
+  <body>
+    <!--##################### Início da barra de navegação ################### -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Hotel Serra Nevada</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Acomodação
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="suitestandard.html"
+                >Suite Standard</a
+              >
+              <a class="dropdown-item" href="suitedouble.html">Suite Double</a>
+              <a class="dropdown-item" href="suitemaster.html">Suite Master</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lazer.html">Lazer</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gastronomia.html">Gastronomia</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventos.html">Eventos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reservas.html">Reservas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="localizacao.html">Localização</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ####################### Fim da barra de navegação ######################### -->
+
+    <header>
+      <h1>Hotel Serra Nevada</h1>
+      <img src="img/logo1.png" alt="Hotel Serra Nevada" />
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <h2>Nossos Eventos</h2>
+        <!--################### Início das imagens em miniatura ################## -->
+        <div id="imgEventos">
+          <img
+            src="img/eventos1.jpg"
+            alt="Lazer"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          />
+
+          <img
+            src="img/eventos2.jpg"
+            alt="Lazer"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl2"
+          />
+
+          <img
+            src="img/eventos3.jpg"
+            alt="Lazer"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl3"
+          />
+
+          <br />
+
+          <img
+            src="img/eventos4.jpg"
+            alt="Lazer"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl4"
+          />
+
+          <img
+            src="img/eventos6.jpg"
+            alt="Lazer"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl5"
+          />
+        </div>
+        <!-- ################### Fim das imagens em miniatura #################### -->
+
+        <!-- Extra large modal -->
+
+        <div
+          class="modal fade bd-example-modal-xl"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myExtraLargeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <img src="img/eventos1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade bd-example-modal-xl2"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myExtraLargeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <img src="img/eventos2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade bd-example-modal-xl3"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myExtraLargeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <img src="img/eventos3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade bd-example-modal-xl4"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myExtraLargeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <img src="img/eventos4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade bd-example-modal-xl5"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myExtraLargeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <img src="img/eventos6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ################### Início do modal das imagens ##################### -->
+
+        <!-- ################### Fim do modal das imagens ######################## -->
+      </div>
+    </main>
+
+    <footer>
+      <!-- ################### Início do footer #####################-->
+      <div class="card">
+        <div class="card-header">
+          Contato
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Endereço:<br />
+            Av. Osvaldo Aranha, 610 - Vila Luiza, Canela - RS
+          </h5>
+          <p class="card-text">
+            Telefone: (54) 3278-9700 | (54) 3265-8095
+            <a href="mailto:hotelserranevada@hotmail.com.br"
+              >contato@hotelserranevada.com.br</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- ################### Fim do footer #################### -->
+    </footer>
+
+    <!-- Scripts de origem bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
